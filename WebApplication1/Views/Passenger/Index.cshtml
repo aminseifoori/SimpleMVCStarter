@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Passenger>
+<table>
+    <tbody>
+        @foreach (var passenger in Model)
+        {
+            <tr>
+                <td>@passenger.Id</td>
+                <td>@passenger.PassangerName</td>
+                <td>@passenger.PassengerLastName</td>
+                <td>@passenger.FlightDate</td>
+                <td>@passenger.FlightTime</td>
+                <td>@passenger.Comment</td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+
